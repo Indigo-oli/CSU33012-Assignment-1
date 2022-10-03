@@ -2,9 +2,9 @@
  *  Basic Calculator Main class.
  *  Currently unfinished
  *
- *  @version [FILL IN]
- *
- *  @author [FILL IN]
+ *  @author	 Indigo Bosworth
+ *           Sai Pranay Gamini
+ *  @Creation Date: 3/10/2022
  *          
  *
  *************************************************************************/
