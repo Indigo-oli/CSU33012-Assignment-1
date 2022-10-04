@@ -30,7 +30,6 @@ public class ValidateInput {
     //Part of Task #4 on Github
     public static boolean IsValidInput(String input){
 
-        return false;
     }
 
 }
