@@ -30,7 +30,21 @@ public class ValidateInput {
     //Part of Task #4 on Github
     public static boolean IsValidInput(String input){
 
-        return false;
+        String cleanedInput = input.replaceAll("\\s+",""); //remove all spaces from input
+
+        //get string as a char array
+        char[] cInput = cleanedInput.toCharArray();
+
+        for(int i = 0; i < cInput.length; i++){    //loop through each character in the string
+            char current = cInput[i];
+
+            if (Character.isDigit(current)) continue;             //If characters are integers or equation signs continue
+            if (current == '*' || current == '+' || current == '-') continue;
+
+            return false;   //if character is not integer or equation sign break and return false
+        }
+        //if able to reach here return true
+        return true;
     }
 
 }
