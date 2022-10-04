@@ -17,6 +17,8 @@ public class CalculateResult {
     public static int RunCalculator(String validInput){
 
         //error checking for if valid input is null
+        if(validInput == null)
+            return 0;
         
         //This method assumes that order of operations need not be obeyed
 
@@ -26,6 +28,11 @@ public class CalculateResult {
 
         int result = Integer.parseInt(equationNumbers[0]);
         int operatorCount = 0;
+
+        //error check - skip loop if only one number
+        if(equationNumbers.length == 1)
+            return result;
+
         for(int i = 1; i < equationNumbers.length; i++){
             switch(operatorsInUse.charAt(operatorCount)){
                 case '*':
