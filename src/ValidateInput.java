@@ -9,14 +9,22 @@
  *
  *************************************************************************/
 
+import java.util.Scanner;
 
 public class ValidateInput {
     
-    //Stub method to get user input during program
+    static Scanner input;
+
+    //Method to get user input during program from console
     //Part of Task #4 on Github
     public static String GetUserInput(){
-
-        return "";
+        input = new Scanner( System.in );
+		String returnString = "";
+		if(input.hasNextLine()) {
+			returnString = input.nextLine();
+		}
+		//clear to the next line of the scanner
+		return returnString;
     }
 
     //Stub method to print result of program to user
