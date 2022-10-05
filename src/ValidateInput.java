@@ -27,10 +27,10 @@ public class ValidateInput {
 		return returnString;
     }
 
-    //Stub method to print result of program to user
+    //Method to print result of program to user
     //Part of Task #4 on Github
     public static void PrintResult(int result){
-
+        System.out.printf("The Result of the equation is: %d%n", result);
         return;
     }
 
