@@ -24,7 +24,7 @@ public class BasicCalculator {
 
       System.out.printf("Please enter an infix equation below, using only operators '+','-' and '*'." +
                         "%nBe aware order of operations and brackets will be ignored.%n" +
-                        "Type 'exit' to end the program");
+                        "Type 'exit' to end the program%n");
 
       //get input
       String input = ValidateInput.GetUserInput();
